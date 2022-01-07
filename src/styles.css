@@ -16,3 +16,7 @@ body {
   margin: 50px auto;
   padding: 50px;
 }
+
+.App .Git-link {
+  color: #ffffff;
+}
