@@ -1,0 +1,10 @@
+.Search .btn-outline-secondary {
+  color: #ffffff;
+  border-style: solid;
+  border-color: #ffffff;
+}
+
+.Search .btn-outline-secondary:hover {
+  background: #dd9e16;
+  color: #bb311d;
+}

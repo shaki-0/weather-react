@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgb(221, 158, 22) 0%,
+    rgb(187, 49, 29) 100%
+  );
+}
+
+.App .Container {
+  background: radial-gradient(rgb(221, 158, 22) 70%, rgb(187, 49, 29) 100%);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 500px;
+  margin: 50px auto;
+  padding: 50px;
+}
