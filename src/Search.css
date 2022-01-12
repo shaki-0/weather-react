@@ -1,7 +1,7 @@
 .Search .btn-outline-secondary {
-  color: #ffffff;
+  color: var(--primary-color);
   border-style: solid;
-  border-color: #ffffff;
+  border-color: var(--primary-color);
 }
 
 .Search .btn-outline-secondary:hover {

@@ -1,6 +1,6 @@
 .Timestamp h2 {
-  color: #ffffff;
+  color: var(--primary-color);
   font-weight: lighter;
   line-height: 20px;
-  margin: 29px auto; 
+  margin: var(--spacing); 
 }

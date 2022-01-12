@@ -1,6 +1,6 @@
 .Cities h1 {
-  color: #ffffff;
-  margin: 29px auto; 
+  color: var(--primary-color);
+  margin: var(--spacing);
   line-height: 20px;
   font-weight: 500;
 }

@@ -1,17 +1,21 @@
+:root {
+  --primary-color: #feff40;
+  --spacing: 29px auto;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  text-align: center; 
+  text-align: center;
   background: linear-gradient(
     90deg,
     rgb(221, 158, 22) 0%,
     rgb(187, 49, 29) 100%
   );
-  color: #feff40; 
 }
 
 .App .Container {
   background: radial-gradient(rgb(221, 158, 22) 70%, rgb(187, 49, 29) 100%);
-  border: 1px solid #ffffff;
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
   width: 500px;
   margin: 50px auto;
@@ -19,5 +23,5 @@ body {
 }
 
 .App .Git-link {
-  color: #ffffff;
+  color: var(--primary-color);
 }

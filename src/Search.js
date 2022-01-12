@@ -11,7 +11,9 @@ export default function Search() {
           placeholder="Type a city"
         />
         <div className="input-group-append">
-          <button className="btn btn-outline-secondary" type="button">
+          <button
+            className="btn btn-outline-secondary" type="button"
+          >
             Search
           </button>
         </div>
