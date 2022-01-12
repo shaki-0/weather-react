@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       <div className="Container">
+        <Search defaultCity="London" />
         <Cities />
         <Timestamp />
-        <Search defaultCity="London"/>
         <Temperature />
       </div>
       <a
