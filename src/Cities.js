@@ -1,5 +1,6 @@
 import React from "react";
 import "./Cities.css";
+import "./styles.css";
 
 export default function Cities() {
   return (
