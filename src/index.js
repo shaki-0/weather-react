@@ -14,7 +14,7 @@ function App() {
       <div className="Container">
         <Cities />
         <Timestamp />
-        <Search />
+        <Search defaultCity="London"/>
         <Temperature />
       </div>
       <a
