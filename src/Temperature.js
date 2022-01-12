@@ -1,8 +1,7 @@
 import React from "react";
 import "./Temperature.css";
 
-export default function Temperature(props) {
-  let description = "Overcast Clouds";
+export default function Temperature () {
   return (
     <div className="Temperature">
       <div className="border">
@@ -11,7 +10,7 @@ export default function Temperature(props) {
           className="weather-icon"
           alt="cloud"
         />
-        <h3> {props.value} </h3>
+        <h3>  </h3>
         <span>
           <a className="units" href="l">
             °C |
@@ -21,12 +20,12 @@ export default function Temperature(props) {
           </a>
         </span>
         <p>
-          <span> {props.humidity} % | </span>
-          <span> {props.wind} km/h </span>
+          <span>  % | </span>
+          <span>  km/h </span>
           <br />
-          <span>Feels like {props.feelsLike}°C </span>
+          <span>Feels like °C </span>
           <br />
-          <span> {description} </span>
+          <span>  </span>
         </p>
       </div>
     </div>
