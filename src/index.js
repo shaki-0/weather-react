@@ -20,6 +20,8 @@ function App() {
       <a
         className="Git-link"
         href="https://github.com/shaki-0/weather-react-app"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         {" "}
         Open source code by Shaki Obadina{" "}
