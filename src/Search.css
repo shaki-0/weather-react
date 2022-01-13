@@ -9,3 +9,11 @@
   color: #bb311d;
 }
 
+.Search h1 {
+  color: var(--primary-color);
+  margin: var(--spacing);
+  line-height: 20px;
+  font-weight: 500;
+}
+
+

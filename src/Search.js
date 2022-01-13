@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
 import Timestamp from "./Timestamp";
-import Cities from "./Cities";
+
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ load: false });
@@ -34,7 +34,7 @@ export default function Search(props) {
             </button>
           </div>
         </div>
-        <Cities />
+        <h1> {weatherData.city} </h1>
         <Timestamp date={weatherData.date} />
       </form>
     );
