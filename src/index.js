@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 
 import Search from "./Search";
 import Cities from "./Cities";
-import Timestamp from "./Timestamp";
 import Temperature from "./Temperature";
 import "./styles.css";
 
@@ -14,7 +13,6 @@ function App() {
       <div className="Container">
         <Search defaultCity="London" />
         <Cities />
-        <Timestamp />
         <Temperature />
       </div>
       <a

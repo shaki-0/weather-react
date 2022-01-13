@@ -35,8 +35,9 @@ export default function Search(props) {
       </form>
     );
   } else {
-    const apiKey = "d7e8260f13d9346a2e404a24c9758f9c";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}=units&metric`;
+    let apiKey = "d7e8260f13d9346a2e404a24c9758f9c";
+    let city = "London";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     axios.get(apiUrl).then(getResponse);
     return "Loading...";
   }
