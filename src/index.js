@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom";
 
 import Search from "./Search";
-import Cities from "./Cities";
 import Temperature from "./Temperature";
 import "./styles.css";
 
@@ -12,7 +11,6 @@ function App() {
     <div className="App">
       <div className="Container">
         <Search defaultCity="London" />
-        <Cities />
         <Temperature />
       </div>
       <a

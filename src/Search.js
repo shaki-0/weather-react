@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
+import Timestamp from "./Timestamp";
+import Cities from "./Cities";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ load: false });
@@ -11,7 +13,7 @@ export default function Search(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       date: "Saturday 11:00",
-      feelslike: response.data.main.feels_like,
+      feels: response.data.main.feels_like,
       description: response.data.weather[0].description,
       city: response.data.name,
     });
@@ -32,6 +34,8 @@ export default function Search(props) {
             </button>
           </div>
         </div>
+        <Cities />
+        <Timestamp />
       </form>
     );
   } else {
