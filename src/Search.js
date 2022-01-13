@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
+import Temperature from "./Temperature";
 import Timestamp from "./Timestamp";
 
 
@@ -36,11 +37,12 @@ export default function Search(props) {
         </div>
         <h1> {weatherData.city} </h1>
         <Timestamp date={weatherData.date} />
+        <Temperature data={weatherData}  />
       </form>
     );
   } else {
     let apiKey = "d7e8260f13d9346a2e404a24c9758f9c";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(getResponse);
     return "Loading...";
   }

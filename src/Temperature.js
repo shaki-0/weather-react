@@ -1,7 +1,7 @@
 import React from "react";
 import "./Temperature.css";
 
-export default function Temperature () {
+export default function Temperature(props) {
   return (
     <div className="Temperature">
       <div className="border">
@@ -10,7 +10,7 @@ export default function Temperature () {
           className="weather-icon"
           alt="cloud"
         />
-        <h3>  </h3>
+        <h3> {Math.round(props.data.temperature)} </h3>
         <span>
           <a className="units" href="l">
             °C |
@@ -20,12 +20,12 @@ export default function Temperature () {
           </a>
         </span>
         <p>
-          <span>  % | </span>
-          <span>  km/h </span>
+          <span> {props.data.humidity} % | </span>
+          <span> {Math.round(props.data.wind)} km/h </span>
           <br />
-          <span>Feels like °C </span>
+          <span>Feels like {Math.round(props.data.feels)} °C </span>
           <br />
-          <span>  </span>
+          <span> {props.data.description} </span>
         </p>
       </div>
     </div>
