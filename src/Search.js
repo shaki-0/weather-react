@@ -12,7 +12,7 @@ export default function Search(props) {
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      date: "Saturday 11:00",
+      date: new Date (response.data.dt * 1000),
       feels: response.data.main.feels_like,
       description: response.data.weather[0].description,
       city: response.data.name,
@@ -35,7 +35,7 @@ export default function Search(props) {
           </div>
         </div>
         <Cities />
-        <Timestamp />
+        <Timestamp date={weatherData.date} />
       </form>
     );
   } else {
