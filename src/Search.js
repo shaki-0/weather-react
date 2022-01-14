@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
-import Temperature from "./Temperature";
+import WeatherResults from "./WeatherResults";
 import Timestamp from "./Timestamp";
 
 export default function Search(props) {
@@ -54,7 +54,7 @@ export default function Search(props) {
         </div>
         <h1> {weatherData.city} </h1>
         <Timestamp date={weatherData.date} />
-        <Temperature data={weatherData} />
+        <WeatherResults data={weatherData} />
       </form>
     );
   } else {

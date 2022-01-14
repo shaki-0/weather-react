@@ -1,20 +1,7 @@
-.Temperature .border {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin: 30px auto;
-  text-decoration: none;
-  border: 1px solid var(--primary-color) !important;
-}
-
-.Temperature .weather-icon {
-margin-top: 15px; 
-}
-
 .Temperature .units {
   position: relative;
-  bottom: 39px;
-  left: 30px;
+  bottom: 45px;
+  left: 35px;
   color: var(--primary-color);
   font-size: 11px;
   font-weight: 500;
@@ -25,14 +12,5 @@ margin-top: 15px;
   color: var(--primary-color);
   font-weight: 500;
   font-size: 30px;
-  margin: 5px; 
-}
-
-.Temperature p {
-  color: var(--primary-color);
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: capitalize;
-  position: relative;
-  bottom: 15px; 
+  margin: 5px;
 }
