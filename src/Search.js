@@ -12,6 +12,7 @@ export default function Search(props) {
       load: true,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
+      icon: `/images/icons/${response.data.weather[0].icon}.png`,
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
       feels: response.data.main.feels_like,
