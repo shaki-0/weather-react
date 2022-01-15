@@ -46,11 +46,11 @@ export default function Search(props) {
             placeholder="Type a city"
             onChange={updateCity}
           />
-          <div className="input-group-append">
-            <button className="btn btn-outline-secondary" type="button">
-              Search
-            </button>
-          </div>
+          <input
+            className="btn btn-outline-secondary"
+            type="Submit"
+            value="Search"
+          />
         </div>
         <h1> {weatherData.city} </h1>
         <Timestamp date={weatherData.date} />
