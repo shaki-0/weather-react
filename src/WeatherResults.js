@@ -1,7 +1,7 @@
 import React from "react";
 import  "./WeatherResults.css";
 import Temperature from "./Temperature";
-import Forecast from "./Forecast";
+
 
 export default function WeatherResults(props) {
   return (
@@ -22,7 +22,6 @@ export default function WeatherResults(props) {
           <span> {props.data.description} </span>
         </p>
       </div>
-      <Forecast />
     </div>
   );
 }

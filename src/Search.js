@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Search.css";
 import WeatherResults from "./WeatherResults";
 import Timestamp from "./Timestamp";
+import Forecast from "./Forecast";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ load: false });
@@ -10,6 +11,7 @@ export default function Search(props) {
   function getResponse(response) {
     setWeatherData({
       load: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       icon: `/images/icons/${response.data.weather[0].icon}.png`,
@@ -55,6 +57,7 @@ export default function Search(props) {
         <h1> {weatherData.city} </h1>
         <Timestamp date={weatherData.date} />
         <WeatherResults data={weatherData} />
+        <Forecast coordinates={weatherData.coordinates}/>
       </form>
     );
   } else {
