@@ -1,0 +1,19 @@
+.Forecast .col-2, .col-3, .col-1 {
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 30px;
+  width: 74px;
+  height: 138px;
+  color: var(--primary-color);
+  margin: 5px;
+  font-size: 14px;
+}
+
+.Forecast .weather-temp-min {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.Forecast .icon-size {
+  width: 60px;
+}

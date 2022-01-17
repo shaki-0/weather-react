@@ -49,7 +49,7 @@ export default function Search(props) {
           <input
             className="btn btn-outline-secondary"
             type="Submit"
-            value="Search"
+            defaultValue="Search"
           />
         </div>
         <h1> {weatherData.city} </h1>
