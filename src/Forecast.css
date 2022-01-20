@@ -1,4 +1,4 @@
-.Forecast .col-2, .col-3, .col-1 {
+.Forecast .col-2 {
   border: 1px solid var(--primary-color);
   padding: 8px;
   border-radius: 30px;
@@ -16,4 +16,18 @@
 
 .Forecast .icon-size {
   width: 60px;
+}
+
+@media (max-width:576px) {
+  .Forecast .col-2 {
+  display: block; 
+  padding: 5px;
+  width: 55px;
+  height: 100px;
+  text-align: center;
+  }
+
+  .Forecast .icon-size {
+  width: 40px;
+}
 }
