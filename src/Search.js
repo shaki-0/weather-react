@@ -24,7 +24,7 @@ export default function Search(props) {
   }
 
   function search() {
-    let apiKey = "d7e8260f13d9346a2e404a24c9758f9c";
+    let apiKey = "34d4d5387fd5071c0cb5d85b55e4602e";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(getResponse);
   }
@@ -57,7 +57,7 @@ export default function Search(props) {
         <h1> {weatherData.city} </h1>
         <Timestamp date={weatherData.date} />
         <WeatherResults data={weatherData} />
-        <Forecast coordinates={weatherData.coordinates}/>
+        <Forecast coordinates={weatherData.coordinates} />
       </form>
     );
   } else {
