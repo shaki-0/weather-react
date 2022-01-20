@@ -18,16 +18,15 @@
   width: 60px;
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .Forecast .col-2 {
-  display: block; 
-  padding: 5px;
-  width: 55px;
-  height: 100px;
-  text-align: center;
+    padding: 5px;
+    width: 55px;
+    height: 100px;
+    text-align: center;
   }
 
   .Forecast .icon-size {
-  width: 40px;
-}
+    width: 40px;
+  }
 }
